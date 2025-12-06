@@ -8,10 +8,10 @@ Get Camunda 7 running in Docker with accessible web apps and REST API
 - Verify Cockpit, Tasklist, and REST API are accessible
 
 ## Success Criteria
-- [ ] Camunda Cockpit accessible at http://localhost:8080/camunda
-- [ ] Camunda Tasklist accessible at http://localhost:8080/camunda/app/tasklist
-- [ ] Can login with default credentials (demo/demo)
-- [ ] REST API responds at http://localhost:8080/engine-rest/engine
+- [x] Camunda Cockpit accessible at http://localhost:8080/camunda
+- [x] Camunda Tasklist accessible at http://localhost:8080/camunda/app/tasklist
+- [x] Can login with default credentials (demo/demo)
+- [x] REST API responds at http://localhost:8080/engine-rest/engine
 
 ## Key Hints
 - Use official Docker image: `camunda/camunda-bpm-platform:latest`

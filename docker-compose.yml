@@ -1,15 +1,9 @@
 services:
-  api:
-    build: ./src/backend
-    environment:
-      - ASPNETCORE_ENVIRONMENT=${ASPNETCORE_ENVIRONMENT}
-    env_file:
-      - ./.env
+  camunda:
+    image: camunda/camunda-bpm-platform:latest
+    container_name: camunda-bpm
     ports:
-      - "7200:8080"
-    depends_on:
-      database:
-        condition: service_healthy
+      - "8080:8080"
     networks:
       - ${NETWORK_NAME}
 
