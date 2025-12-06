@@ -9,11 +9,11 @@ Create and deploy a simple approval workflow BPMN diagram
 - Gateway conditions for approve/reject paths
 
 ## Success Criteria
-- [ ] Valid BPMN 2.0 XML file created
-- [ ] Process deployed to Camunda 7
-- [ ] Process visible in Cockpit
-- [ ] Can start process manually from Tasklist
-- [ ] Gateway routes correctly based on decision
+- [x] Valid BPMN 2.0 XML file created
+- [x] Process deployed to Camunda 7
+- [x] Process visible in Cockpit
+- [x] Can start process manually from Tasklist
+- [x] Gateway routes correctly based on decision
 
 ## Key Hints
 - Download Camunda Modeler from camunda.com (free)
