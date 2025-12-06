@@ -1,0 +1,18 @@
+services:
+  api:
+    build: ./src/backend
+    environment:
+      - ASPNETCORE_ENVIRONMENT=${ASPNETCORE_ENVIRONMENT}
+    env_file:
+      - ./.env
+    ports:
+      - "7200:8080"
+    depends_on:
+      database:
+        condition: service_healthy
+    networks:
+      - ${NETWORK_NAME}
+
+networks:
+  bpmn-network:
+    driver: bridge
