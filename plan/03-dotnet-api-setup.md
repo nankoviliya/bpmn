@@ -10,10 +10,10 @@ Create .NET API project and establish connection to Camunda
 - Health check endpoint
 
 ## Success Criteria
-- [ ] API project created with `dotnet new webapi`
-- [ ] Can make HTTP calls to Camunda REST API
-- [ ] Health endpoint returns Camunda engine status
-- [ ] Configuration externalized to appsettings.json
+- [x] API project created with `dotnet new webapi`
+- [x] Can make HTTP calls to Camunda REST API
+- [x] Health endpoint returns Camunda engine status
+- [x] Configuration externalized to appsettings.json
 
 ## Key Hints
 - Use IHttpClientFactory for Camunda HTTP calls
