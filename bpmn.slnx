@@ -1,0 +1,5 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Bpmn.Api/Bpmn.Api.csproj" />
+  </Folder>
+</Solution>

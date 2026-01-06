@@ -1,3 +1,5 @@
+using FastEndpoints;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -8,6 +10,8 @@ builder.Services.AddHttpClient<CamundaService>();
 
 builder.Services.AddHealthChecks()
     .AddCheck<CamundaHealthCheck>("camunda");
+
+builder.Services.AddFastEndpoints();
 
 var app = builder.Build();
 
@@ -30,4 +34,5 @@ app.MapGet("/process-definition/{key}", (
 
 app.MapHealthChecks("/healthz");
 
+app.UseFastEndpoints();
 app.Run();

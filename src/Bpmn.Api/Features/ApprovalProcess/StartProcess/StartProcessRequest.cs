@@ -1,0 +1,1 @@
+public record StartProcessRequest(string BusinessReference);
